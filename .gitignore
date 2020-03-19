@@ -5,6 +5,7 @@ npm-debug.log
 .jshintrc
 a.txt
 
+# .gitignore 不会忽略自身
 .gitignore
 
 # 忽略所有的 .a 文件
