@@ -25,3 +25,5 @@ doc/*.txt
 # 忽略 doc/ 目录及其所有子目录下的 .pdf 文件
 doc/**/*.pdf
 
+# GitHub 针对数十种项目及语言的 .gitignore 文件列表:
+# https://github.com/github/gitignore
