@@ -1,11 +1,11 @@
+# 忽略所有的下列文件
 .DS_Store
 .project
-node_modules
-.idea/
-.vscode/
 npm-debug.log
 .jshintrc
-.vs/
+a.txt
+
+.gitignore
 
 # 忽略所有的 .a 文件
 *.a
@@ -16,8 +16,14 @@ npm-debug.log
 # 只忽略当前目录下的 TODO 文件，而不忽略 subdir/TODO
 /TODO
 
-# 忽略任何目录下名为 node_modules 的文件夹
+# 忽略任何目录下名为 node_modules 的文件夹(这两种都适用)
 node_modules/
+node_modules
+
+dist/
+.vs/
+.idea/
+.vscode/
 
 # 忽略 doc/notes.txt，但不忽略 doc/server/arch.txt
 doc/*.txt
