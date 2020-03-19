@@ -5,7 +5,7 @@ npm-debug.log
 .jshintrc
 a.txt
 
-.gitignore
+# .gitignore
 
 # 忽略所有的 .a 文件
 *.a
