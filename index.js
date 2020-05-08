@@ -1,3 +1,2 @@
-// add on branch develop firstly
 
-const develop = 'develop'
+const feature = 'feature'   // comment export
