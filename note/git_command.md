@@ -144,18 +144,15 @@ git show [<选项>] <对象>...
     git stash drop [stash_id]           //删除现场
     git stash clear                     //删除所有缓存stash
 
-### tag
+### tag    
     git tag -l                                  // 查看已打的标签
     git tag -l "v1.8.5*"                        // 查看某个系列的标签
-
     git tag <tagname>                           // 打一个轻量标签
     git tag -a <tagname> -m "my version 1.4"    // 打一个附注标签
-    git tag -a v1.2 9fceb02                     // 后期打标签    
     git tag -d <tagname>                        // 删除标签
-
-    git push origin <tagname>                   // 推送标签到共享服务器上
     git push origin --delete <tagname>          // 删除远程标签
-
+    git tag -a v1.2 9fceb02                     // 后期打标签
+    git push origin <tagname>                   // 推送标签到共享服务器上
     git push origin --tags                      // 把所有不在远程仓库服务器上的标签全部传送到那里
     git checkout 2.0.0                          // 检出标签(注:会使仓库处于“分离头指针（detacthed HEAD）”的状态-有副作用)
 
