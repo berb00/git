@@ -129,6 +129,7 @@
         git tag -l | xargs git tag -d               // 删除所有本地标签
 
 
+
     #、fetch
         git fetch remotealias   // 拉取远程仓库到本地仓库 (默认master分支)
         git fetch remotealias branchname   // 拉取远程指定分支到本地仓库 (成功后返回一个FETCH_HEAD) // git log -p FETCH_HEAD         
