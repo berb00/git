@@ -97,7 +97,7 @@
     #、reset
         git reset HEAD <file>               // 把暂存区的修改回退到工作区（把暂存区的修改撤销掉清除 （unstage），重新放回工作区）
         git reset --hard HEAD^              // 把当前版本回退到上一个版本
-        git reset --hard commitId           // HEAD指针指向commitId版本    
+        git reset --hard commitId           // HEAD指针指向commitId版本
         git reset --hard <commit_id>        //把工作区内容恢复到指定版本
         前进回退版本号:
             1.使用索引值
@@ -125,6 +125,9 @@
         git push origin <tagname>                   // 推送标签到共享服务器上
         git push origin --tags                      // 把所有不在远程仓库服务器上的标签全部传送到那里
         git checkout 2.0.0                          // 检出标签(注:会使仓库处于“分离头指针（detacthed HEAD）”的状态-有副作用)
+        git show-ref --tag | awk '{print ":" $2}' | xargs git push origin   // 删除所有远程标签
+        git tag -l | xargs git tag -d               // 删除所有本地标签
+
 
     #、fetch
         git fetch remotealias   // 拉取远程仓库到本地仓库 (默认master分支)
